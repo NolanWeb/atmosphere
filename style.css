@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+main {
+    padding: 1rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.forecast {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.time-period {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+}
+
+.time-period h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #007BFF;
+    text-align: center;
+}
+
+.details {
+    margin-top: 1rem;
+    line-height: 1.5;
+}
+
+.temperature, .precipitation, .wind {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.temperature span, .precipitation span, .wind span {
+    display: inline-block;
+    margin-right: 0.5rem;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .forecast {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .time-period {
+        width: 90%;
+    }
+}
